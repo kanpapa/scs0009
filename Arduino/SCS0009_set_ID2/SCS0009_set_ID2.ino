@@ -17,11 +17,6 @@ void setup()
   sc.pSerial = &Serial1;
   delay(1000);
 
-//  int param5 = sc.readByte(1, 0);
-//  int param6 = sc.readByte(1, 1);
-// Serial.println(param5);
-//  Serial.println(param6);
-
   sc.WritePos(1, 1000, 0, 1500);
   delay(800);
 
@@ -32,7 +27,7 @@ void setup()
   sc.LockEprom(2);    //　ID2のサーボのEPROM書き込みをロックする。(この時点でIDが2になっているので2を指定している）
   delay(100);
   
-  sc.WritePos(1, 20, 0, 1500);
+  sc.WritePos(2, 20, 0, 1500);
 }
 
 void loop()
