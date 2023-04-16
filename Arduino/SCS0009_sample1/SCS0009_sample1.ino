@@ -18,10 +18,8 @@ void setup()
 void loop()
 {
   sc.WritePos(1, 1000, 0, 1500);
-  sc.WritePos(2, 20, 0, 1500);
   delay(754);  //[(P1-P0)/V]*1000+[V/(A*100)]*1000
 
   sc.WritePos(2, 1000, 0, 1500);
-  sc.WritePos(1, 20, 0, 1500);
   delay(754);  //[(P1-P0)/V]*1000+[V/(A*100)]*1000
 }
